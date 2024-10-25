@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">practica3Moviles</string>
+    <string name="textViewPerfilPersonal">Mi Perfil Personal</string>
+    <string name="textViewNombre">Nombre</string>
+    <string name="textViewApellidos">Apellidos</string>
+    <string name="textViewCorreo">Correo</string>
+    <string name="textViewGenero">Genero</string>
+    <string name="textViewPais">País de origen</string>
+    <string name="textViewAficiones">Selecciona tus aficiones</string>
+    <string name="checkBoxLectura">Lectura</string>
+    <string name="checkBoxDeporte">Deporte</string>
+    <string name="checkBoxMusica">Música</string>
+    <string name="checkBoxArte">Arte</string>
+    <string name="textViewSuscripcion">Suscribete a la "newsletter"</string>
+</resources>
