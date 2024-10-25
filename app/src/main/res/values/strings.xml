@@ -12,4 +12,6 @@
     <string name="checkBoxMusica">Música</string>
     <string name="checkBoxArte">Arte</string>
     <string name="textViewSuscripcion">Suscribete a la "newsletter"</string>
+    <string name="switchSuscrito">Subscripción</string>
+    <string name="buttonGuardar">Guardar</string>
 </resources>
