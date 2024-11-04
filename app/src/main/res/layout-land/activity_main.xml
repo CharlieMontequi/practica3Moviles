@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:id="@+id/textViewFormulario"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:paddingHorizontal="30dp"
+            android:paddingVertical="60dp">
+            <!-- el gravity para centrar todos los elementos en el centro de la pantalla
+            para crear el borde se añade el padding vertical y horizontal
+            para que se extienda el layout por abajo se adapta la altura al contenido
+             -->
+            <!-- para que salga el nombre en el fondo del campo es con el atributo hint-->
+            <TextView
+                android:id="@+id/textViewTitulo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="10dp"
+                android:text="@string/formulario"
+                android:textSize="34sp" />
+
+            <ImageView
+                android:id="@+id/imageViewPerfil"
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                tools:srcCompat="@tools:sample/avatars" />
+
+            <EditText
+                android:id="@+id/editTextTextNombre"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="20dp"
+                android:ems="10"
+                android:hint="@string/nombre"
+                android:inputType="text" />
+
+            <EditText
+                android:id="@+id/editTextTextApellidos"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="20dp"
+                android:ems="10"
+                android:hint="Apellidos"
+                android:inputType="text" />
+
+            <EditText
+                android:id="@+id/editTextTextCorreo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="20dp"
+                android:ems="10"
+                android:inputType="textEmailAddress" />
+
+            <TextView
+                android:id="@+id/textViewGenero"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="10dp"
+                android:text="@string/genero" />
+
+            <RadioGroup
+                android:id="@+id/radioGroupGenero"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginVertical="30dp">
+
+                <RadioButton
+                    android:id="@+id/radioButonHombre"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/hombre"/>
+                <RadioButton
+                    android:id="@+id/radioButonMujer"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/mujer"/>
+                <RadioButton
+                    android:id="@+id/radioButonOtro"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/otro"/>
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/textViewPais"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="10dp"
+                android:text="@string/pais" />
+
+            <Spinner
+                android:id="@+id/spinnerPaises"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginVertical="30dp" />
+
+            <TextView
+                android:id="@+id/intereses"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="10dp"
+                android:text="@string/intereses" />
+
+            <CheckBox
+                android:id="@+id/checkBoxLectura"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/lectura"/>
+            <CheckBox
+                android:id="@+id/checkBoxDeporte"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/deporte"/>
+            <CheckBox
+                android:id="@+id/checkBoxMusica"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/musica"/>
+            <CheckBox
+                android:id="@+id/checkBoxArte"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/arte"/>
+
+            <TextView
+                android:id="@+id/textViewSatisfaccion"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginVertical="10dp"
+                android:text="@string/satisfaccion"/>
+
+            <SeekBar
+                android:id="@+id/seekBarSatisfaccion"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <Switch
+                android:id="@+id/suscripcion"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="10dp"
+                android:text="@string/suscripcion" />
+
+            <Button
+                android:id="@+id/buttonGuardar"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="@string/guardar" />
+
+            <TextView
+                android:id="@+id/textViewRevisado"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
