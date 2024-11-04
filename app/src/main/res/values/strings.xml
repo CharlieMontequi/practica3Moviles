@@ -1,17 +1,38 @@
 <resources>
     <string name="app_name">practica3Moviles</string>
-    <string name="textViewPerfilPersonal">Mi Perfil Personal</string>
-    <string name="textViewNombre">Nombre</string>
-    <string name="textViewApellidos">Apellidos</string>
-    <string name="textViewCorreo">Correo</string>
-    <string name="textViewGenero">Genero</string>
-    <string name="textViewPais">País de origen</string>
-    <string name="textViewAficiones">Selecciona tus aficiones</string>
-    <string name="checkBoxLectura">Lectura</string>
-    <string name="checkBoxDeporte">Deporte</string>
-    <string name="checkBoxMusica">Música</string>
-    <string name="checkBoxArte">Arte</string>
-    <string name="textViewSuscripcion">Suscribete a la "newsletter"</string>
-    <string name="switchSuscrito">Subscripción</string>
-    <string name="buttonGuardar">Guardar</string>
+    <string name="formulario">Formulario de usuario</string>
+    <string name="nombre">Nombre</string>
+    <string name="apellidos">Apellidos</string>
+    <string name="correo">Correo electrónico</string>
+    <!--genero-->
+    <string name="genero">Género</string>
+    <string name="hombre">Hombre</string>
+    <string name="mujer">Mujer</string>
+    <string name="otro">Otro</string>
+    <!--paises-->
+    <string name="pais">País de origen</string>
+    <string-array name="arrayPaises">
+        <item>España</item>
+        <item>Italia</item>
+        <item>Zimbabue</item>
+        <item>Alemania</item>
+        <item>Narnia</item>
+        <item>Innopia</item>
+    </string-array>
+    <!--intereses-->
+    <string name="intereses">Intereses o hoobies</string>
+    <string name="lectura">Lectura</string>
+    <string name="deporte">Deporte</string>
+    <string name="musica">Música</string>
+    <string name="arte">Arte</string>
+    <!---->
+    <string name="satisfaccion">Grado de satisfacción:</string>
+    <string name="suscripcion">Suscripción al boletín</string>
+    <string name="guardar">Guardar y validar</string>
+    <!--avisos-->
+    <string name="avisosNombre">Faltan datos importantes por rellenar. Revisa nombre, apellidos o correo</string>
+    <string name="avisosGenero">No se ha marcado ningun género</string>
+    <!--suscriociones-->
+    <string name="suscripcionPositiva">Se ha suscrito al Boletín.</string>
+    <string name="suscripcionNegativa">No se ha suscrito al Boletín.</string>
 </resources>

@@ -7,263 +7,170 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <CheckBox
-        android:id="@+id/checkBoxLectura"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:text="@string/checkBoxLectura"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="@+id/textViewAficiones"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/textViewAficiones"
-        app:layout_constraintTop_toBottomOf="@+id/textViewAficiones"
-        app:layout_constraintVertical_bias="0.0" />
 
-    <CheckBox
-        android:id="@+id/checkBoxArte"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:text="@string/checkBoxArte"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/checkBoxMusica"
-        app:layout_constraintHorizontal_bias="0.515"
-        app:layout_constraintStart_toEndOf="@+id/checkBoxLectura"
-        app:layout_constraintTop_toBottomOf="@+id/textViewAficiones"
-        app:layout_constraintVertical_bias="0.0" />
-
-    <TextView
-        android:id="@+id/textViewPais"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="32dp"
-        android:text="@string/textViewPais"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="@+id/textViewGenero"
-        app:layout_constraintHorizontal_bias="0.59"
-        app:layout_constraintStart_toStartOf="@+id/textViewGenero"
-        app:layout_constraintTop_toBottomOf="@+id/textViewGenero"
-        app:layout_constraintVertical_bias="0.0" />
-
-    <TextView
-        android:id="@+id/textViewSuscripcion"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="73dp"
-        android:text="@string/textViewSuscripcion"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="@+id/textViewAficiones"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/textViewAficiones"
-        app:layout_constraintTop_toBottomOf="@+id/textViewAficiones"
-        app:layout_constraintVertical_bias="0.081" />
-
-    <TextView
-        android:id="@+id/textViewAficiones"
-        android:layout_width="200dp"
-        android:layout_height="38dp"
-        android:layout_marginTop="28dp"
-        android:text="@string/textViewAficiones"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="@+id/textViewPais"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/textViewPais"
-        app:layout_constraintTop_toBottomOf="@+id/textViewPais"
-        app:layout_constraintVertical_bias="0.0" />
-
-    <TextView
-        android:id="@+id/textViewPerfil"
-        android:layout_width="121dp"
-        android:layout_height="22dp"
-        android:layout_marginEnd="84dp"
-        android:text="@string/textViewPerfilPersonal"
-        app:layout_constraintBottom_toBottomOf="@+id/imageView"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toEndOf="@+id/imageView"
-        app:layout_constraintTop_toTopOf="@+id/imageView"
-        app:layout_constraintVertical_bias="0.0" />
-
-    <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.056"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.026"
-        tools:srcCompat="@tools:sample/avatars" />
+        app:layout_constraintTop_toTopOf="parent">
 
-    <TextView
-        android:id="@+id/textViewNombre"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/textViewNombre"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/editTextNombre"
-        app:layout_constraintHorizontal_bias="0.373"
-        app:layout_constraintStart_toStartOf="@+id/imageView"
-        app:layout_constraintTop_toBottomOf="@+id/imageView"
-        app:layout_constraintVertical_bias="0.026" />
+        <LinearLayout
+            android:id="@+id/textViewFormulario"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:paddingHorizontal="30dp"
+            android:paddingVertical="60dp">
+            <!-- el gravity para centrar todos los elementos en el centro de la pantalla
+            para crear el borde se añade el padding vertical y horizontal
+            para que se extienda el layout por abajo se adapta la altura al contenido
+             -->
+            <!-- para que salga el nombre en el fondo del campo es con el atributo hint-->
+            <TextView
+                android:id="@+id/textViewTitulo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="10dp"
+                android:text="@string/formulario"
+                android:textSize="34sp" />
 
-    <EditText
-        android:id="@+id/editTextNombre"
-        android:layout_width="wrap_content"
-        android:layout_height="48dp"
-        android:ems="10"
-        android:inputType="text"
-        android:text="@string/textViewNombre"
-        android:
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="@+id/textViewPerfil"
-        app:layout_constraintHorizontal_bias="0.46"
-        app:layout_constraintStart_toStartOf="@+id/textViewPerfil"
-        app:layout_constraintTop_toBottomOf="@+id/textViewPerfil"
-        app:layout_constraintVertical_bias="0.041" />
+            <ImageView
+                android:id="@+id/imageViewPerfil"
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                tools:srcCompat="@tools:sample/avatars" />
 
-    <EditText
-        android:id="@+id/editTextApellidos"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="24dp"
-        android:ems="10"
-        android:inputType="text"
-        android:text="@string/textViewApellidos"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="@+id/editTextNombre"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/editTextNombre"
-        app:layout_constraintTop_toBottomOf="@+id/editTextNombre"
-        app:layout_constraintVertical_bias="0.0" />
+            <EditText
+                android:id="@+id/editTextTextNombre"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="20dp"
+                android:ems="10"
+                android:hint="@string/nombre"
+                android:inputType="text" />
 
-    <TextView
-        android:id="@+id/textViewApellidos"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="31dp"
-        android:text="@string/textViewApellidos"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="@+id/textViewNombre"
-        app:layout_constraintHorizontal_bias="0.714"
-        app:layout_constraintStart_toStartOf="@+id/textViewNombre"
-        app:layout_constraintTop_toBottomOf="@+id/textViewNombre"
-        app:layout_constraintVertical_bias="0.0" />
+            <EditText
+                android:id="@+id/editTextTextApellidos"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="20dp"
+                android:ems="10"
+                android:hint="Apellidos"
+                android:inputType="text" />
 
-    <TextView
-        android:id="@+id/textViewCorreo"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="119dp"
-        android:text="@string/textViewCorreo"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="@+id/textViewApellidos"
-        app:layout_constraintHorizontal_bias="0.533"
-        app:layout_constraintStart_toStartOf="@+id/textViewApellidos"
-        app:layout_constraintTop_toBottomOf="@+id/imageView"
-        app:layout_constraintVertical_bias="0.0" />
+            <EditText
+                android:id="@+id/editTextTextCorreo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="20dp"
+                android:ems="10"
+                android:inputType="textEmailAddress" />
 
-    <TextView
-        android:id="@+id/textViewGenero"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="187dp"
-        android:text="@string/textViewGenero"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="@+id/textViewCorreo"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/textViewCorreo"
-        app:layout_constraintTop_toBottomOf="@+id/imageView"
-        app:layout_constraintVertical_bias="0.0" />
+            <TextView
+                android:id="@+id/textViewGenero"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="10dp"
+                android:text="@string/genero" />
 
-    <RadioGroup
-        android:id="@+id/radioGroupGenero"
-        android:layout_width="252dp"
-        android:layout_height="58dp"
-        android:layout_marginBottom="316dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="@+id/editTextTextEmailAddress"
-        app:layout_constraintHorizontal_bias="0.547"
-        app:layout_constraintStart_toStartOf="@+id/editTextTextEmailAddress"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextEmailAddress"
-        app:layout_constraintVertical_bias="0.269" />
+            <RadioGroup
+                android:id="@+id/radioGroupGenero"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginVertical="30dp">
 
-    <Spinner
-        android:id="@+id/spinnerPaises"
-        android:layout_width="123dp"
-        android:layout_height="25dp"
-        android:layout_marginTop="20dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="@+id/radioGroupGenero"
-        app:layout_constraintHorizontal_bias="0.41"
-        app:layout_constraintStart_toStartOf="@+id/radioGroupGenero"
-        app:layout_constraintTop_toBottomOf="@+id/radioGroupGenero"
-        app:layout_constraintVertical_bias="0.0" />
+                <RadioButton
+                    android:id="@+id/radioButonHombre"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/hombre"/>
+                <RadioButton
+                    android:id="@+id/radioButonMujer"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/mujer"/>
+                <RadioButton
+                    android:id="@+id/radioButonOtro"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/otro"/>
+            </RadioGroup>
 
-    <CheckBox
-        android:id="@+id/checkBoxMusica"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:text="@string/checkBoxMusica"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/checkBoxDeporte"
-        app:layout_constraintHorizontal_bias="0.875"
-        app:layout_constraintStart_toStartOf="@+id/textViewAficiones"
-        app:layout_constraintTop_toBottomOf="@+id/textViewAficiones"
-        app:layout_constraintVertical_bias="0.0" />
+            <TextView
+                android:id="@+id/textViewPais"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="10dp"
+                android:text="@string/pais" />
 
-    <CheckBox
-        android:id="@+id/checkBoxDeporte"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:text="@string/checkBoxDeporte"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="@+id/radioGroupGenero"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="@+id/textViewAficiones"
-        app:layout_constraintTop_toBottomOf="@+id/textViewAficiones"
-        app:layout_constraintVertical_bias="0.0" />
+            <Spinner
+                android:id="@+id/spinnerPaises"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginVertical="30dp" />
 
-    <Switch
-        android:id="@+id/switchSuscripción"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="29dp"
-        android:text="@string/switchSuscrito"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="@+id/radioGroupGenero"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toEndOf="@+id/textViewSuscripcion"
-        app:layout_constraintTop_toBottomOf="@+id/textViewAficiones"
-        app:layout_constraintVertical_bias="0.37" />
+            <TextView
+                android:id="@+id/intereses"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="10dp"
+                android:text="@string/intereses" />
 
-    <EditText
-        android:id="@+id/editTextTextEmailAddress"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:ems="10"
-        android:text="@string/textViewCorreo"
-        android:inputType="textEmailAddress"
-        app:layout_constraintEnd_toEndOf="@+id/editTextApellidos"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/editTextApellidos"
-        app:layout_constraintTop_toBottomOf="@+id/editTextApellidos" />
+            <CheckBox
+                android:id="@+id/checkBoxLectura"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/lectura"/>
+            <CheckBox
+                android:id="@+id/checkBoxDeporte"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/deporte"/>
+            <CheckBox
+                android:id="@+id/checkBoxMusica"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/musica"/>
+            <CheckBox
+                android:id="@+id/checkBoxArte"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/arte"/>
 
-    <Button
-        android:id="@+id/buttonGuardar"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/buttonGuardar"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="@+id/switchSuscripción"
-        app:layout_constraintHorizontal_bias="0.515"
-        app:layout_constraintStart_toStartOf="@+id/textViewSuscripcion"
-        app:layout_constraintTop_toBottomOf="@+id/textViewSuscripcion"
-        app:layout_constraintVertical_bias="0.342" />
+            <TextView
+                android:id="@+id/textViewSatisfaccion"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginVertical="10dp"
+                android:text="@string/satisfaccion"/>
+
+            <SeekBar
+                android:id="@+id/seekBarSatisfaccion"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <Switch
+                android:id="@+id/suscripcion"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="10dp"
+                android:text="@string/suscripcion" />
+
+            <Button
+                android:id="@+id/buttonGuardar"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="@string/guardar" />
+
+            <TextView
+                android:id="@+id/textViewRevisado"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+    </ScrollView>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
